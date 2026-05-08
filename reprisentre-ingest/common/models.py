@@ -14,6 +14,7 @@ class Listing:
     asking_price_eur: Optional[int]
     raw_text: str
     last_seen_at: str
+    image_url: Optional[str] = None  # stored in raw_data until DB column exists
 
     def to_dict(self) -> Dict[str, Any]:
         return asdict(self)
